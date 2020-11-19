@@ -24,7 +24,14 @@ public class RationalNumber extends RealNumber{
     RationalNumber recip=new RationalNumber(getDenominator(), getNumerator());
     return recip;
   }
+  public boolean equals(RationalNumber other){
+    if (getNumerator()==other.getNumerator() && getDenominator()==other.getDenominator()) {
+      return true;
+    }
+    return false;
+  }
   public String toString(){
     return numerator+"/"+denominator;
   }
+
 }

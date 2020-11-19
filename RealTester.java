@@ -47,6 +47,7 @@ public class RealTester{
     RationalNumber k = new RationalNumber(0,4);
     RationalNumber l = new RationalNumber(4,0);
     RationalNumber m = new RationalNumber(5,4);
+    RationalNumber n = new RationalNumber(1,2);
 
     System.out.println("RationalNumber Tests");
     //getValue tests
@@ -73,5 +74,10 @@ public class RealTester{
     System.out.println(k.reciprocal()); //0/1
     System.out.println(l.reciprocal()); //0/1
     System.out.println(m.reciprocal()); //4/5
+    //equals tests
+    System.out.println("\nEquals Tests:");
+    System.out.println(g.equals(h)); //false
+    System.out.println(g.equals(n)); //true
+    System.out.println(j.equals(m)); //false
   }
 }
