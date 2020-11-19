@@ -6,6 +6,9 @@ public class RealNumber{
   public double getValue(){
     return value;
   }
+  public String toString(){
+    return ""+value;
+  }
   public RealNumber add(RealNumber other){
     RealNumber sum=new RealNumber(getValue()+other.getValue());
     return sum;
