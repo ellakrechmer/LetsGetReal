@@ -1,5 +1,6 @@
 public class RealTester{
   public static void main(String[] args){
+    //RealNumber
     RealNumber a = new RealNumber(3);
     RealNumber b = new RealNumber(4);
     RealNumber c = new RealNumber(3.0000001);
@@ -7,6 +8,7 @@ public class RealTester{
     RealNumber e = new RealNumber(0);
     RealNumber f = new RealNumber(0.0000001);
 
+    System.out.println("RealNumber Tests");
     //add tests
     System.out.println("Add Tests:");
     System.out.println(a.add(b)); //7.0
@@ -37,5 +39,31 @@ public class RealTester{
     System.out.println(b.subtract(a)); //1.0
     System.out.println(d.subtract(a)); //-3.0
     System.out.println(a.subtract(d)); //3.0
+
+    //RationalNumber
+    RationalNumber g = new RationalNumber(1,2);
+    RationalNumber h = new RationalNumber(2,4);
+    RationalNumber j = new RationalNumber(3,5);
+    RationalNumber k = new RationalNumber(0,4);
+    RationalNumber l = new RationalNumber(4,0);
+    RationalNumber m = new RationalNumber(5,4);
+
+    System.out.println("RationalNumber Tests");
+    //getValue tests
+    System.out.println("getValue Tests:");
+    System.out.println(g.getValue()); //0.5
+    System.out.println(h.getValue()); //0.5
+    System.out.println(j.getValue()); //0.6
+    System.out.println(k.getValue()); //0.0
+    System.out.println(l.getValue()); //0.0
+    System.out.println(m.getValue()); //1.25
+    //getNumerator and getDenominator tests
+    System.out.println("\ngetNumerator and getDenominator Tests:");
+    System.out.println(g.getNumerator()); //1
+    System.out.println(g.getDenominator()); //2
+    System.out.println(h.getNumerator()); //2
+    System.out.println(h.getDenominator()); //4
+    System.out.println(l.getNumerator()); //0
+    System.out.println(l.getDenominator()); //1
   }
 }
