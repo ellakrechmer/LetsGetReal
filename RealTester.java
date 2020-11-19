@@ -2,6 +2,20 @@ public class RealTester{
   public static void main(String[] args){
     RealNumber a = new RealNumber(3);
     RealNumber b = new RealNumber(4);
-    System.out.println(a.add(b));
+    RealNumber c = new RealNumber(3.0000001);
+    RealNumber d = new RealNumber(0);
+    RealNumber e = new RealNumber(0);
+    RealNumber f = new RealNumber(0.0000001);
+
+    //add tests
+    System.out.println("Add Tests:");
+    System.out.println(a.add(b)); //7.0
+
+    //equals tests
+    System.out.println("\nEquals Tests:");
+    System.out.println(a.equals(b)); //false
+    System.out.println(a.equals(c)); //true
+    System.out.println(d.equals(e)); //true
+    System.out.println(d.equals(f)); //false
   }
 }
