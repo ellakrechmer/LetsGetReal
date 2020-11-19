@@ -65,5 +65,13 @@ public class RealTester{
     System.out.println(h.getDenominator()); //4
     System.out.println(l.getNumerator()); //0
     System.out.println(l.getDenominator()); //1
+    //reciprocal tests
+    System.out.println("\nReciprocal Tests:");
+    System.out.println(g.reciprocal()); //2/1
+    System.out.println(h.reciprocal()); //4/2
+    System.out.println(j.reciprocal()); //5/3
+    System.out.println(k.reciprocal()); //0/1
+    System.out.println(l.reciprocal()); //0/1
+    System.out.println(m.reciprocal()); //4/5
   }
 }

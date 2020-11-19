@@ -20,4 +20,11 @@ public class RationalNumber extends RealNumber{
   public int getDenominator(){
     return denominator;
   }
+  public RationalNumber reciprocal(){
+    RationalNumber recip=new RationalNumber(getDenominator(), getNumerator());
+    return recip;
+  }
+  public String toString(){
+    return numerator+"/"+denominator;
+  }
 }
