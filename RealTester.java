@@ -29,6 +29,13 @@ public class RealTester{
     System.out.println(a.divide(b)); //0.75
     System.out.println(b.divide(a)); //1.3333
     System.out.println(d.divide(a)); //0.0
-    System.out.println(a.divide(d)); //error-Java returns infinity
+    System.out.println(a.divide(d)); //undefined-Java returns infinity
+
+    //subtract tests
+    System.out.println("\nSubtract Tests:");
+    System.out.println(a.subtract(b)); //-1.0
+    System.out.println(b.subtract(a)); //1.0
+    System.out.println(d.subtract(a)); //-3.0
+    System.out.println(a.subtract(d)); //3.0
   }
 }
