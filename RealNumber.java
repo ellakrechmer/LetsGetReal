@@ -24,4 +24,8 @@ public class RealNumber{
     RealNumber sum=new RealNumber(getValue()+other.getValue());
     return sum;
   }
+  public RealNumber multiply(RealNumber other){
+    RealNumber product=new RealNumber(getValue()*other.getValue());
+    return product;
+  }
 }

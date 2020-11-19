@@ -10,6 +10,7 @@ public class RealTester{
     //add tests
     System.out.println("Add Tests:");
     System.out.println(a.add(b)); //7.0
+    System.out.println(a.add(d)); //3.0
 
     //equals tests
     System.out.println("\nEquals Tests:");
@@ -17,5 +18,10 @@ public class RealTester{
     System.out.println(a.equals(c)); //true
     System.out.println(d.equals(e)); //true
     System.out.println(d.equals(f)); //false
+
+    //multiply tests
+    System.out.println("\nMultiply Tests:");
+    System.out.println(a.multiply(b)); //12.0
+    System.out.println(a.multiply(d)); //0.0
   }
 }
