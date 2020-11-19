@@ -28,4 +28,8 @@ public class RealNumber{
     RealNumber product=new RealNumber(getValue()*other.getValue());
     return product;
   }
+  public RealNumber divide(RealNumber other){
+    RealNumber quotient=new RealNumber(getValue()/other.getValue());
+    return quotient;
+  }
 }
