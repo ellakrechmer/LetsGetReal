@@ -81,12 +81,19 @@ public class RealTester{
     System.out.println(g.equals(n)); //true
     System.out.println(j.equals(m)); //false
     //reduce tests
-    System.out.println("\nReduce Tests:");
+    /*System.out.println("\nReduce Tests:");
     g.reduce();
     h.reduce();
     o.reduce();
     System.out.println(g); // 1/2
     System.out.println(h); // 1/2
     System.out.println(o); // 1/3
+    */
+    //multiply and divide tests
+    System.out.println("\nMultiply and Divide Tests:");
+    System.out.println(g.multiply(j)); //3/10
+    System.out.println(g.divide(j)); //5/6
+    System.out.println(j.divide(g)); //6/5
+    System.out.println(g.multiply(n)); //1/4
   }
 }
