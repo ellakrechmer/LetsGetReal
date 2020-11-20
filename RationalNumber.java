@@ -6,11 +6,20 @@ public class RationalNumber extends RealNumber{
       numerator=0;
       denominator=1;
     }
+    else if (nume<0 && deno<0) {
+      numerator=Math.abs(nume);
+      denominator=Math.abs(deno);
+    }
+    else if (deno<0){
+      numerator=0-nume;
+      denominator=Math.abs(deno);
+    }
     else {
       numerator=nume;
       denominator=deno;
     }
   }
+  
   public double getValue(){
     return (double) numerator/denominator;
   }
