@@ -47,4 +47,9 @@ public class RationalNumber extends RealNumber{
     int gcd=b;
     return gcd;
   }
+  private void reduce(){
+    int gcd=gcd(numerator,denominator);
+    numerator/=gcd;
+    denominator/=gcd;
+  }
 }
