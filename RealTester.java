@@ -95,5 +95,13 @@ public class RealTester{
     System.out.println(g.divide(j)); //5/6
     System.out.println(j.divide(g)); //6/5
     System.out.println(g.multiply(n)); //1/4
+    //add and subtract tests
+    System.out.println("\nAdd and Subtract Tests:");
+    System.out.println(g.add(n)); //2/2
+    System.out.println(g.subtract(n)); //0/2
+    System.out.println(h.add(j)); //22/20
+    System.out.println(h.subtract(j)); //-2/20
+    System.out.println(g.add(j)); //11/10
+    System.out.println(j.subtract(g)); //1/10
   }
 }

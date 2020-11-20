@@ -61,4 +61,25 @@ public class RationalNumber extends RealNumber{
   public RationalNumber divide(RationalNumber other){
     return this.multiply(other.reciprocal());
   }
+  private static int lcm(int a, int b){
+    int gcd=gcd(a,b);
+    a/=gcd;
+    b/=gcd;
+    int lcm=a*b*gcd;
+    return lcm;
+  }
+  public RationalNumber add(RationalNumber other){
+    int newdeno=lcm(getDenominator(), other.getDenominator());
+    int thisnewnume=(newdeno/getDenominator())*getNumerator();
+    int othernewnume=(newdeno/other.getDenominator())*other.getNumerator();
+    RationalNumber sum= new RationalNumber(thisnewnume+othernewnume, newdeno);
+    return sum;
+  }
+  public RationalNumber subtract(RationalNumber other){
+    int newdeno=lcm(getDenominator(), other.getDenominator());
+    int thisnewnume=(newdeno/getDenominator())*getNumerator();
+    int othernewnume=(newdeno/other.getDenominator())*other.getNumerator();
+    RationalNumber diff=new RationalNumber(thisnewnume-othernewnume, newdeno);
+    return diff;
+  }
 }
