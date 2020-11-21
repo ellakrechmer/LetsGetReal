@@ -63,21 +63,21 @@ public class RealTester{
     System.out.println("\ngetNumerator and getDenominator Tests:");
     System.out.println(g.getNumerator()); //1
     System.out.println(g.getDenominator()); //2
-    System.out.println(h.getNumerator()); //2
-    System.out.println(h.getDenominator()); //4
+    System.out.println(h.getNumerator()); //1
+    System.out.println(h.getDenominator()); //2
     System.out.println(l.getNumerator()); //0
     System.out.println(l.getDenominator()); //1
     //reciprocal tests
     System.out.println("\nReciprocal Tests:");
     System.out.println(g.reciprocal()); //2/1
-    System.out.println(h.reciprocal()); //4/2
+    System.out.println(h.reciprocal()); //2/1
     System.out.println(j.reciprocal()); //5/3
     System.out.println(k.reciprocal()); //0/1
     System.out.println(l.reciprocal()); //0/1
     System.out.println(m.reciprocal()); //4/5
     //equals tests
     System.out.println("\nEquals Tests:");
-    System.out.println(g.equals(h)); //false
+    System.out.println(g.equals(h)); //true
     System.out.println(g.equals(n)); //true
     System.out.println(j.equals(m)); //false
     //reduce tests
@@ -97,11 +97,14 @@ public class RealTester{
     System.out.println(g.multiply(n)); //1/4
     //add and subtract tests
     System.out.println("\nAdd and Subtract Tests:");
-    System.out.println(g.add(n)); //2/2
+    System.out.println(g.add(n)); //1/1
     System.out.println(g.subtract(n)); //0/2
-    System.out.println(h.add(j)); //22/20
-    System.out.println(h.subtract(j)); //-2/20
+    System.out.println(h.add(j)); //11/10
+    System.out.println(h.subtract(j)); //-1/10
     System.out.println(g.add(j)); //11/10
     System.out.println(j.subtract(g)); //1/10
+
+    RationalNumber x = new RationalNumber(1, -2);
+    System.out.println(x);
   }
 }

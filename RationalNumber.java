@@ -18,8 +18,9 @@ public class RationalNumber extends RealNumber{
       numerator=nume;
       denominator=deno;
     }
+    reduce();
   }
-  
+
   public double getValue(){
     return (double) numerator/denominator;
   }
@@ -48,7 +49,7 @@ public class RationalNumber extends RealNumber{
       a=b;
       b=storea;
     }
-    while (a%b!=0) {
+    while (b!=0 && a%b!=0) {
       int r=a%b;
       a=b;
       b=r;
@@ -58,8 +59,10 @@ public class RationalNumber extends RealNumber{
   }
   private void reduce(){
     int gcd=gcd(numerator,denominator);
-    numerator/=gcd;
-    denominator/=gcd;
+    if (gcd!=0) {
+      numerator/=gcd;
+      denominator/=gcd;
+    }
   }
   public RationalNumber multiply(RationalNumber other){
     int newnume=getNumerator()*other.getNumerator();
