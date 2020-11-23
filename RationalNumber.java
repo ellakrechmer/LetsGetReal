@@ -41,7 +41,8 @@ public class RationalNumber extends RealNumber{
     return false;
   }
   public String toString(){
-    return numerator+"/"+denominator;
+    if (denominator==1) return ""+numerator;
+    else return numerator+"/"+denominator;
   }
   private static int gcd(int a, int b){
     if (a<b){
