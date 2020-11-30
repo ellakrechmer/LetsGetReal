@@ -106,5 +106,7 @@ public class RealTester{
 
     RationalNumber x = new RationalNumber(1, -2);
     System.out.println(x);
+    RationalNumber y = new RationalNumber(-1, -2);
+    System.out.println(y);
   }
 }
