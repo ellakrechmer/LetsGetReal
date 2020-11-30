@@ -5,14 +5,6 @@ public class RationalNumber extends Number{
       numerator=0;
       denominator=1;
     }
-    else if (nume<0 && deno<0) {
-      numerator=Math.abs(nume);
-      denominator=Math.abs(deno);
-    }
-    else if (deno<0){
-      numerator=0-nume;
-      denominator=Math.abs(deno);
-    }
     else {
       numerator=nume;
       denominator=deno;
@@ -40,9 +32,10 @@ public class RationalNumber extends Number{
     return false;
   }
   public String toString(){
-    if (denominator==1) return ""+numerator;
-    else if (numerator==0) return "0";
-    else return numerator+"/"+denominator;
+    if (getDenominator()==1) return ""+getNumerator();
+    else if (getNumerator()==0) return "0";
+    else if (getDenominator()<0) return -getNumerator()+"/"+Math.abs(getDenominator());
+    else return getNumerator()+"/"+getDenominator();
   }
   private static int gcd(int a, int b){
     if (a<b){
