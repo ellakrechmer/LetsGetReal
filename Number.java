@@ -1,9 +1,9 @@
 public abstract class Number  {
   public abstract double getValue();
   public int compareTo(Number other){
-    if (this.getValue()>other.getValue()) return 1;
-    else if (this.getValue()<other.getValue()) return -1;
-    else return 0;
+    if (this.equals(other)) return 0;
+    else if (this.getValue()>other.getValue()) return 1;
+    else return -1;
   }
   public boolean equals(RealNumber other){
     if (other.getValue()==0 || getValue()==0) {
